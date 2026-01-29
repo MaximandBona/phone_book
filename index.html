@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телефонная книга</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <img src="telep.png" alt="картинка телефона">
+            <h1>Телефонная книга</h1>
+        </header>
+    </section>
+
+
+    <section>
+        <nav>
+            <ul>
+            <li class="dropdown1">
+                <button class="filtr">🔎 Найти</button>
+                <div class="punkti1">
+                    <a href="#" class="roditel">Родители</a><!--Мама, Папа-->
+                    <a href="#" class="familly">Родные</a><!--Мама, Папа, Брат, Дедушка-->
+                    <a href="#" class="school_people">Школа</a><!--Федя, Ольга Петровна-->
+                    <a href="#" class="friend">Друзья</a><!--Илья, Федя-->
+                    <a href="#" class="man">Мужчины</a><!--Папа, Брат, Дедушка, Илья, Федя -->
+                    <a href="#" class="woman">Женщины</a><!--Мама, Ольга Петровна-->
+                </div>
+            </li></ul>
+            <ul>
+            <li class="dropdown">
+                <button class="nast">⚙️ Настройки</button>
+                <div class="punkti2">
+                    <a href="#" class="create">Создать контакт</a>
+                    <a href="#" class="serv">Посмотреть сервер</a>
+                </div>
+            </li>
+        </nav></ul>
+    </section>
+
+
+    <main>
+        <section class="list" id="contSec">
+            <div class="box">
+                <img src="avatar.png" alt="аватарка">
+                <div class="box_write">
+                    <h2>Мама</h2>
+                    <p>8-(918)-***-**-**</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="avatar.png" alt="аватарка">
+                <div class="box_write">
+                    <h2>Папа</h2>
+                    <p>8-(978)-***-**-**</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="avatar.png" alt="аватарка">
+                <div class="box_write">
+                    <h2>Брат</h2>
+                    <p>8-(940)-***-**-**</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="avatar.png" alt="аватарка">
+                <div class="box_write">
+                    <h2>Дедушка</h2>
+                    <p>8-(909)-***-**-**</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="avatar.png" alt="аватарка">
+                <div class="box_write">
+                    <h2>Федя (одноклассник)</h2>
+                    <p>8-(931)-***-**-**</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="avatar.png" alt="аватарка">
+                <div class="box_write">
+                    <h2>Илья (одноклассник, сосед. дом)</h2>
+                    <p>8-(970)-***-**-**</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="avatar.png" alt="аватарка">
+                <div class="box_write">
+                    <h2>Ольга Петровна (классный руководитель)</h2>
+                    <p>8-(999)-***-**-**</p>
+                </div>
+            </div>
+        </section>
+        <section class="create_list">
+            <h3>Создать контакт</h3>
+            <p>Имя: </p>
+            <input id="contName" name="namme" type="text" class = "name_user" placeholder="Например: Вася">
+            <p>Кем приходиться: </p>
+            <input id="who" name="who" type="text" class = "who_user" placeholder="Например: Родственник">
+            <p>Номер телефона: </p>
+            <input id="nomer" name="nomer" type="text" placeholder="Например: +7 (111) ...">
+            <p>Пол: </p>
+            <input name="r1" type="radio" class = "radio" value="A">
+            <label>Муж</label>
+            <input name="r2" type="radio" class = "radio" value="Б">
+            <label>Жен</label><br>
+            <input id="btn1" name="otpravki" class="otpravka" type="submit" placeholder="Отправить">
+        </section>
+    </main>
+    
+<script src="app.js"></script>
+</body>
+</html>
